@@ -18,7 +18,7 @@ def rotate_angle(samples,deg):
 
 plt.rcParams['figure.dpi']=80
 
-path="/home/hyun/8psk_9.6k.cplx64.pcm"
+path="/home/hyun/works/wvt/8psk_9.6k.cplx64.pcm"
 
 
 samp_rate=8000
@@ -38,10 +38,14 @@ plot_power(f,pxx,'power(periodgram): ')
 
 
 corr=np.correlate(samps,sync,mode="full")
+corr=np.abs(corr)
 plot_time(corr[0:9000])
 
 
 rot_sync=rotate_angle(sync,180) # 45 degree
+#rot_sync=np.conj(rot_sync)
+#rot_sync=np.conj(sync)
 
 corr=np.correlate(samps,rot_sync,mode="full")
+corr=np.abs(corr)
 plot_time(corr[0:9000])
