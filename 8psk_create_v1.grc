@@ -264,7 +264,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [984, 888.0]
+    coordinate: [983, 801]
     rotation: 0
     state: enabled
 - name: blocks_throttle_0
@@ -343,9 +343,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [728, 832.0]
+    coordinate: [714, 904]
     rotation: 0
-    state: enabled
+    state: disabled
 - name: digital_symbol_sync_xx_0
   id: digital_symbol_sync_xx
   parameters:
@@ -447,7 +447,7 @@ blocks:
     name: '"Filtered"'
     nconnections: '2'
     size: '1024'
-    style1: '1'
+    style1: '0'
     style10: '0'
     style2: '0'
     style3: '0'
@@ -482,7 +482,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1192, 880.0]
+    coordinate: [1247, 783]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0
@@ -652,6 +652,7 @@ connections:
 - [digital_constellation_modulator_0, '0', qtgui_const_sink_x_2, '0']
 - [digital_constellation_modulator_0, '0', qtgui_freq_sink_x_0, '1']
 - [digital_costas_loop_cc_0, '0', blocks_repeat_0, '0']
+- [digital_symbol_sync_xx_0, '0', blocks_repeat_0, '0']
 - [digital_symbol_sync_xx_0, '0', digital_costas_loop_cc_0, '0']
 - [freq_xlating_fir_filter_xxx_0, '0', virtual_sink_0, '0']
 - [root_raised_cosine_filter_0, '0', virtual_sink_0, '0']

@@ -142,7 +142,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [401, 24]
+    coordinate: [426, 27]
     rotation: 0
     state: enabled
 - name: var_filter_taps
@@ -223,7 +223,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [72, 336.0]
+    coordinate: [306, 273]
     rotation: 0
     state: enabled
 - name: blocks_file_source_0
@@ -233,7 +233,7 @@ blocks:
     alias: ''
     begin_tag: pmt.PMT_NIL
     comment: /home/hyun/psk8_8k_16t_1200.pcm (works)
-    file: /home/hyun/works/QPSK/test_u2_4.pcm
+    file: /home/hyun/psk8_8k_16t.pcm
     length: '0'
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -245,7 +245,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [16, 128.0]
+    coordinate: [16, 154]
     rotation: 0
     state: true
 - name: blocks_float_to_complex_0
@@ -295,7 +295,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [216, 248.0]
+    coordinate: [81, 348]
     rotation: 0
     state: true
 - name: blocks_throttle_0
@@ -352,7 +352,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [808, 696.0]
+    coordinate: [926, 736]
     rotation: 0
     state: enabled
 - name: digital_symbol_sync_xx_0
@@ -371,7 +371,7 @@ blocks:
     osps: '1'
     pfb_mf_taps: '[]'
     resamp_type: digital.IR_MMSE_8TAP
-    sps: sps
+    sps: '3.4'
     ted_gain: '1.0'
     ted_type: digital.TED_SIGNAL_TIMES_SLOPE_ML
     type: cc
@@ -399,7 +399,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [816, 256.0]
+    coordinate: [1002, 223]
     rotation: 0
     state: enabled
 - name: import_0
@@ -433,7 +433,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [520, 208.0]
+    coordinate: [641, 215]
     rotation: 0
     state: enabled
 - name: qtgui_const_sink_x_0
@@ -525,7 +525,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1032, 584.0]
+    coordinate: [1200, 504]
     rotation: 0
     state: enabled
 - name: qtgui_const_sink_x_0_0
@@ -697,7 +697,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [856, 376.0]
+    coordinate: [714, 359]
     rotation: 0
     state: enabled
 - name: qtgui_time_sink_x_0
@@ -904,7 +904,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1080, 232.0]
+    coordinate: [1296, 413]
     rotation: 0
     state: true
 - name: virtual_source_0
